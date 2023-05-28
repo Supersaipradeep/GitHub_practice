@@ -1,36 +1,60 @@
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
-$ git branch
-* main
+git commands :
 
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+TO CONFIGURE MAIL :
+
+$ git config --global user.email "xxx@gmail.com"
+
+TO INITIALIZE GIT :
+
+$ git init
+
+TO CLONE A REPOSITORY/BRANCH :
+
+$ git clone https://github.com/Supersaipradeep/GitHub_practice.git
+
+TO ADD A CHANGE TO STAGING LAYER :
+
+$ git add index.html
+
+TO ADD A CHANGE FROM MULTIPLE FILES TO A STAGING LAYER AFTER CREATING .GITIGNORE FILE IN LOCAL REPO :
+
+$ git add .
+
+TO COMMIT A FILE WITH SOME COMMENTS :
+
+$ git commit -m "adding new commit comments"
+
+TO CHECK THE COMMIT STATUS :
+
+$ git status
+
+TO CHECK THE LOGS AFTER COMMITTING THE FILE :
+
+$ git log
+
+TO REVERT BACK THE CODE COMMITTED :
+
+$ git revert daa854700594d15385033fdbedbe0a09a6104f3d
+
+TO RESET THE CODE :
+
+$ git reset
+
+TO CREATE A NEW BRANCH :
+
 $ git branch feature/developer
 
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
-$ git branch
-  feature/developer
-* main
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
-$ git checkout feature/developer
-Switched to branch 'feature/developer'
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
-$ git branch
-* feature/developer
-  main
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
-$ git branch main
-fatal: a branch named 'main' already exists
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
-$ git checkout main
-Switched to branch 'main'
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
-$ git branch -D feature/developer
-Deleted branch feature/developer (was 16346c8).
-
-saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+TO CREATE A NEW BRANCH  AND CHECK OUT :
 $ git checkout -b feature/developer
-Switched to a new branch 'feature/developer'
+
+TO DELETE THE BRANCH :
+
+$ git branch -D feature/developer
+
+TO LIST THE BRANCHES IN THE REPOSITORY :
+
+$ git branch
+
+TO PUSH THE CODE TO REMOTE BRANCH :
+
+$ git push origin feature/developer
