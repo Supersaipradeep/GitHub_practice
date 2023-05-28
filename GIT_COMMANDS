@@ -1,0 +1,36 @@
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git branch
+* main
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git branch feature/developer
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git branch
+  feature/developer
+* main
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git checkout feature/developer
+Switched to branch 'feature/developer'
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
+$ git branch
+* feature/developer
+  main
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (feature/developer)
+$ git checkout main
+Switched to branch 'main'
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git branch -D feature/developer
+Deleted branch feature/developer (was 16346c8).
+
+saipr@DESKTOP-S0RHR1J MINGW64 ~/software/Git_workspace/GitHub_practice (main)
+$ git checkout -b feature/developer
+Switched to a new branch 'feature/developer'
