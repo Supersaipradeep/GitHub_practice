@@ -2,7 +2,20 @@ git commands :
 
 TO CONFIGURE MAIL :
 
+$ git config --global user.name "xxx"
 $ git config --global user.email "xxx@gmail.com"
+
+TO CONNECT TO REMOTE REPOSITORY :
+
+$ git remote add origin https://github.com/Supersaipradeep/GitHub_practice.git
+
+set up git access from local to remote repository :
+
+ git remote set-url origin https://Supersaipradeep@github.com/Supersaipradeep/GitHub_practice.git
+
+to generate github token :
+go to settings --> developer settings --> PERSONAL ACCESS TOKEN--> NO EXPIRY
+TOKEN IS (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)
 
 TO INITIALIZE GIT :
 
@@ -58,3 +71,11 @@ $ git branch
 TO PUSH THE CODE TO REMOTE BRANCH :
 
 $ git push origin feature/developer
+
+TO MERGE THE COMMITS :
+
+$ git merge feature/developer
+
+TO PULL THE CODE :
+
+$ giT pull
